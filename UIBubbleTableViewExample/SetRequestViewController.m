@@ -18,6 +18,8 @@
 
 @synthesize nameLabel;
 @synthesize name;
+@synthesize saveButton;
+@synthesize blockButton;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -50,7 +52,6 @@
     [self.nameTextField resignFirstResponder];
 }
 
-
 - (IBAction)handleSaveClick:(id)sender {
     [self performSegueWithIdentifier:@"requestToConversation" sender:self];
 }
@@ -58,6 +59,8 @@
 - (IBAction)handleBlockClick:(id)sender {
     [self performSegueWithIdentifier:@"requestToBlocked" sender:self];
 }
+
+
 
 
 
@@ -80,11 +83,5 @@
 }
 
 
-/*- (void)dealloc {
-    [_saveButton release];
-    [_blockButton release];
-    [nameLabel release];
-    [_nameTextField release];
-    [super dealloc];
-}*/
+
 @end

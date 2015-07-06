@@ -9,6 +9,7 @@
 //
 
 #import "AppDelegate.h"
+#import "FirstLaunchScreenViewController.h"
 
 
 
@@ -37,6 +38,11 @@
 #endif
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];*/
+  
+   /* FirstLaunchScreenViewController *launchScreen = [[FirstLaunchScreenViewController
+                                                     alloc]init];
+    if (launchScreen.name==nil){
+        [self.window setRootViewController:launchScreen];}*/
    
     return YES;
 }

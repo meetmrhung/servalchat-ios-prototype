@@ -14,6 +14,8 @@
 @property (strong, nonatomic) IBOutlet UITextField *nameTextField;
 @property (strong, nonatomic) IBOutlet UIButton *saveButton;
 @property (strong, nonatomic) IBOutlet UIButton *blockButton;
+@property (retain, nonatomic) IBOutlet UINavigationItem *setNavigationItem;
+
 
 @property (nonatomic, strong) NSString *name;
 

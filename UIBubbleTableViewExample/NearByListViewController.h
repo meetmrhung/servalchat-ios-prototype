@@ -15,5 +15,6 @@
 @interface NearByListViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 
+@property (strong, nonatomic) IBOutlet UINavigationItem *nearbyUINavigationItem;
 
 @end

@@ -19,12 +19,14 @@
 
 
 @synthesize tableView;
-
+@synthesize nearbyUINavigationItem;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     [self loadInitialData];
+    UIBarButtonItem * item = [[UIBarButtonItem alloc] initWithCustomView:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"icon_25.png"]]];
+    nearbyUINavigationItem.leftBarButtonItem = item;
     
     
     
@@ -171,4 +173,5 @@ self.nearBys = [NSMutableArray arrayWithObjects:NearBy1, NearBy2, NearBy3, NearB
     [tableView release];
     [super dealloc];
 }*/
+
 @end

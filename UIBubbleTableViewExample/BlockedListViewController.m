@@ -16,10 +16,13 @@
 
 @implementation BlockedListViewController
 @synthesize tableView;
+@synthesize blockedUINavigationItem;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self loadInitialData];
+    UIBarButtonItem * item = [[UIBarButtonItem alloc] initWithCustomView:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"icon_25.png"]]];
+    blockedUINavigationItem.leftBarButtonItem = item;
     // Do any additional setup after loading the view.
 }
 
@@ -113,4 +116,5 @@
     [tableView release];
     [super dealloc];
 }*/
+
 @end

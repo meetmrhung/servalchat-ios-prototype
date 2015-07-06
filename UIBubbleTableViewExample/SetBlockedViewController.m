@@ -48,12 +48,15 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
-- (IBAction)handleForgetClick:(id)sender {
-    [self performSegueWithIdentifier:@"blockedToUnknown" sender:self];
-}
+
+
 - (IBAction)handleUnblockClick:(id)sender {
     [self performSegueWithIdentifier:@"blockedToUnknown" sender:self];
 }
+- (IBAction)handleForgetClick:(id)sender {
+    [self performSegueWithIdentifier:@"blockedToUnknown" sender:self];
+}
+
 
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
@@ -71,8 +74,5 @@
     }
 
 }
-
-
-
 
 @end

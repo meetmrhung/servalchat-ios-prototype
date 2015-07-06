@@ -12,10 +12,10 @@
 
 @property (strong, nonatomic) IBOutlet UILabel *nameLabel;
 @property (strong, nonatomic) IBOutlet UITextField *nameTextField;
+
 @property (strong, nonatomic) IBOutlet UIButton *forgetButton;
 
 @property (strong, nonatomic) IBOutlet UIButton *unblockButton;
-
 
 @property (nonatomic, strong) NSString *name;
 

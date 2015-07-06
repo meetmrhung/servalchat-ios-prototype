@@ -21,12 +21,15 @@
 
 
 @synthesize tableView;
-
+@synthesize requestUINavigationItem;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     [self loadInitialData];
+    UIBarButtonItem * item = [[UIBarButtonItem alloc] initWithCustomView:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"icon_25.png"]]];
+    requestUINavigationItem.leftBarButtonItem = item;
+    
     
    
     
@@ -161,5 +164,6 @@
     [tableView release];
     [super dealloc];
 }*/
+
 @end
 

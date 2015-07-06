@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="OFt-Os-g9z">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="i4I-Px-B9J">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
@@ -10,15 +10,15 @@
             <objects>
                 <viewController id="XhA-Kc-bXu" customClass="ContactListViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="nKu-qI-Nce"/>
-                        <viewControllerLayoutGuide type="bottom" id="Vfd-yF-ado"/>
+                        <viewControllerLayoutGuide type="top" id="5hc-2A-YLf"/>
+                        <viewControllerLayoutGuide type="bottom" id="dK7-u9-1Kq"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="FBC-8Q-FKE">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" allowsSelectionDuringEditing="YES" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="fvL-4f-dzL">
-                                <rect key="frame" x="6" y="-28" width="398" height="489"/>
+                                <rect key="frame" x="-3" y="-35" width="496" height="489"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ContactCell" id="ELQ-hB-cjx">
@@ -42,27 +42,29 @@
                     </view>
                     <navigationItem key="navigationItem" id="7rU-nh-sgL" userLabel="Contact List"/>
                     <connections>
+                        <outlet property="contactUINavigationItem" destination="7rU-nh-sgL" id="PoN-S2-MmA"/>
                         <outlet property="tableView" destination="fvL-4f-dzL" id="bmO-Cp-fbn"/>
+                        <segue destination="cZ2-qA-ahZ" kind="show" identifier="contactsToSetProfil" id="9LD-XR-mCY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QVv-Gl-t0k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2203" y="682"/>
+            <point key="canvasLocation" x="-2661" y="687"/>
         </scene>
         <!--Near By List-->
         <scene sceneID="2EG-Vf-fah">
             <objects>
                 <viewController id="mUS-TT-cAk" customClass="NearByListViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="o6I-o8-kY4"/>
-                        <viewControllerLayoutGuide type="bottom" id="vVi-da-yS2"/>
+                        <viewControllerLayoutGuide type="top" id="T8a-X4-zFH"/>
+                        <viewControllerLayoutGuide type="bottom" id="8Mg-tg-z7y"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="cbH-Kr-yJw">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="WGV-3U-3d6">
-                                <rect key="frame" x="0.0" y="-25" width="386" height="536"/>
+                                <rect key="frame" x="0.0" y="-34" width="493" height="536"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="NearByCell" id="D0u-Ls-Mcl">
@@ -85,27 +87,28 @@
                     </view>
                     <navigationItem key="navigationItem" title="Near By List" id="gvJ-ys-foy"/>
                     <connections>
+                        <outlet property="nearbyUINavigationItem" destination="gvJ-ys-foy" id="rzv-8G-L1e"/>
                         <outlet property="tableView" destination="WGV-3U-3d6" id="7Mi-CQ-fCZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V6q-sZ-Zpt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2176.875" y="1465.1408450704225"/>
+            <point key="canvasLocation" x="-2661" y="1401"/>
         </scene>
         <!--Requests list-->
         <scene sceneID="Rlf-ij-D0Y">
             <objects>
                 <viewController id="Do0-L8-04D" customClass="RequestListViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="CfW-Fn-1tn"/>
-                        <viewControllerLayoutGuide type="bottom" id="BaN-qX-UXS"/>
+                        <viewControllerLayoutGuide type="top" id="YHz-zp-2g8"/>
+                        <viewControllerLayoutGuide type="bottom" id="M1U-PG-dju"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="0Pf-Ux-bdn">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="tAT-ga-Fif">
-                                <rect key="frame" x="0.0" y="-31" width="386" height="512"/>
+                                <rect key="frame" x="0.0" y="-34" width="481" height="512"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RequestCell" id="fTI-2h-OZ1">
@@ -128,27 +131,28 @@
                     </view>
                     <navigationItem key="navigationItem" title="Requests list" id="oCU-U6-bTP"/>
                     <connections>
+                        <outlet property="requestUINavigationItem" destination="oCU-U6-bTP" id="bM2-NO-BvX"/>
                         <outlet property="tableView" destination="tAT-ga-Fif" id="zlg-PL-5FY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CiQ-68-WZr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2176.875" y="2233.0985915492956"/>
+            <point key="canvasLocation" x="-2661" y="2233"/>
         </scene>
         <!--Blocked List-->
         <scene sceneID="zlG-6m-GqC">
             <objects>
                 <viewController id="QMH-hL-P8z" customClass="BlockedListViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="LbN-Uz-kMh"/>
-                        <viewControllerLayoutGuide type="bottom" id="58X-s1-cqb"/>
+                        <viewControllerLayoutGuide type="top" id="9xl-jw-vmK"/>
+                        <viewControllerLayoutGuide type="bottom" id="zac-n2-JED"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="k6l-hV-7Ts">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="qCL-Sy-6lX">
-                                <rect key="frame" x="0.0" y="-36" width="372" height="534"/>
+                                <rect key="frame" x="0.0" y="-32" width="462" height="534"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BlockedCell" id="typ-73-JyG">
@@ -171,20 +175,78 @@
                     </view>
                     <navigationItem key="navigationItem" title="Blocked List" id="uE0-6l-RZL"/>
                     <connections>
+                        <outlet property="blockedUINavigationItem" destination="uE0-6l-RZL" id="j7l-80-72q"/>
                         <outlet property="tableView" destination="qCL-Sy-6lX" id="1tL-2J-LiS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cvG-zy-shO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2176.875" y="2987.3239436619715"/>
+            <point key="canvasLocation" x="-2650" y="3000"/>
+        </scene>
+        <!--Set Profil View Controller-->
+        <scene sceneID="jQf-ja-SWf">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="cZ2-qA-ahZ" customClass="SetProfilViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="afB-wW-Gup"/>
+                        <viewControllerLayoutGuide type="bottom" id="wtJ-oC-sgb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4nY-1x-l2B">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name Editing Field" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EfM-cr-W2m">
+                                <rect key="frame" x="33" y="90" width="216" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="bottom" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="O1R-9R-cyj">
+                                <rect key="frame" x="186" y="184" width="61" height="30"/>
+                                <color key="backgroundColor" red="0.249615856" green="0.74281455590000001" blue="0.14698809660000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="handleSaveClick:" destination="9h3-HV-wz1" eventType="touchUpInside" id="klh-Zh-Upn"/>
+                                    <action selector="handleSaveClick:" destination="o0S-cl-mpB" eventType="touchUpInside" id="z71-YN-9Pq"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tSC-10-HS3">
+                                <rect key="frame" x="33" y="130" width="211" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My serval ID: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kbf-6e-LkI">
+                                <rect key="frame" x="33" y="147" width="211" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xky-jU-9WR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Chd-cl-RkW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1881" y="-18"/>
         </scene>
         <!--Setting View Controller-->
         <scene sceneID="Hwf-lz-i1U">
             <objects>
-                <viewController storyboardIdentifier="SettingViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="o0S-cl-mpB" customClass="SettingViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SettingViewController" hidesBottomBarWhenPushed="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="o0S-cl-mpB" customClass="SettingViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Q1e-Yt-g8E"/>
-                        <viewControllerLayoutGuide type="bottom" id="l2B-pk-D0m"/>
+                        <viewControllerLayoutGuide type="top" id="HkG-Cs-KA2"/>
+                        <viewControllerLayoutGuide type="bottom" id="8fC-A7-RGs"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="2uB-F1-R8V">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
@@ -280,15 +342,15 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xdG-7u-Noz" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-956.25" y="610.56338028169012"/>
+            <point key="canvasLocation" x="-1751.25" y="682.3943661971831"/>
         </scene>
         <!--Set Contact View Controller-->
         <scene sceneID="v8A-jz-Agw">
             <objects>
-                <viewController id="9h3-HV-wz1" customClass="SetContactViewController" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="9h3-HV-wz1" customClass="SetContactViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ikQ-vl-kGv"/>
-                        <viewControllerLayoutGuide type="bottom" id="eAs-mA-IqT"/>
+                        <viewControllerLayoutGuide type="top" id="jV6-Ke-31d"/>
+                        <viewControllerLayoutGuide type="bottom" id="06Y-KA-4ox"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="evq-F4-NDP">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
@@ -305,28 +367,49 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xit-bV-hqe">
-                                <rect key="frame" x="30" y="253" width="39" height="30"/>
-                                <state key="normal" title="Block">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="handleBlockClick:" destination="9h3-HV-wz1" eventType="touchUpInside" id="DMi-4v-vWT"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J23-ul-dds">
                                 <rect key="frame" x="160" y="100" width="147" height="25"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vYA-c2-oPq">
-                                <rect key="frame" x="160" y="205" width="73" height="26"/>
-                                <state key="normal" title="Save">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="sD5-7t-gKJ">
+                                <rect key="frame" x="25" y="223" width="61" height="30"/>
+                                <color key="backgroundColor" red="0.90588235289999997" green="0.2244312265" blue="0.18620971950000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Block">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="handleSaveClick:" destination="9h3-HV-wz1" eventType="touchUpInside" id="8F6-pD-xfC"/>
+                                    <action selector="handleBlockClick:" destination="o0S-cl-mpB" eventType="touchUpInside" id="ewQ-Cb-8ZV"/>
+                                    <action selector="handleBlockClick:" destination="9h3-HV-wz1" eventType="touchUpInside" id="pdc-OR-UZi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="bottom" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="h6e-bN-fcK">
+                                <rect key="frame" x="179" y="223" width="61" height="30"/>
+                                <color key="backgroundColor" red="0.249615856" green="0.74281455590000001" blue="0.14698809660000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="handleSaveClick:" destination="o0S-cl-mpB" eventType="touchUpInside" id="4OX-xN-ZpS"/>
+                                    <action selector="handleSaveClick:" destination="9h3-HV-wz1" eventType="touchUpInside" id="66E-1B-B8w"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -334,40 +417,41 @@
                     </view>
                     <navigationItem key="navigationItem" id="5Ly-Xh-3Co"/>
                     <connections>
-                        <outlet property="blockButton" destination="Xit-bV-hqe" id="V8C-Ft-Xg2"/>
+                        <outlet property="SetNavigationItem" destination="5Ly-Xh-3Co" id="dZL-Xj-8cd"/>
+                        <outlet property="blockButton" destination="sD5-7t-gKJ" id="3en-Xs-72e"/>
                         <outlet property="nameLabel" destination="J23-ul-dds" id="niX-zF-R9Z"/>
                         <outlet property="nameTextField" destination="llD-Sp-YbB" id="qWO-do-vFO"/>
-                        <outlet property="saveButton" destination="vYA-c2-oPq" id="Bpd-tF-mUu"/>
+                        <outlet property="saveButton" destination="h6e-bN-fcK" id="oQ4-Kd-Vz0"/>
                         <segue destination="Ny0-XO-sI3" kind="show" identifier="nearbyToConversation" id="U9a-j8-jX0"/>
                         <segue destination="iaX-Zx-5XS" kind="show" identifier="nearbyToBlocked" id="Wiy-fk-qgv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZN2-dR-U2I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1447" y="1484"/>
+            <point key="canvasLocation" x="-1751.25" y="1467.2535211267605"/>
         </scene>
         <!--Conversation View Controller-->
         <scene sceneID="qVZ-zf-8xa">
             <objects>
-                <viewController storyboardIdentifier="ConversationViewController" id="Ny0-XO-sI3" customClass="ConversationViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ConversationViewController" hidesBottomBarWhenPushed="YES" id="Ny0-XO-sI3" customClass="ConversationViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="m0X-lk-qrt"/>
-                        <viewControllerLayoutGuide type="bottom" id="tHO-xH-qvV"/>
+                        <viewControllerLayoutGuide type="top" id="peL-Eh-F5u"/>
+                        <viewControllerLayoutGuide type="bottom" id="Xrf-E8-QkA"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="acG-iu-z7p">
-                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a7T-pt-BtX">
-                                <rect key="frame" x="-5" y="322" width="614" height="42"/>
+                                <rect key="frame" x="-7" y="368" width="614" height="52"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OQa-jz-tdk">
-                                        <rect key="frame" x="8" y="5" width="260" height="30"/>
+                                        <rect key="frame" x="8" y="9" width="260" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bDb-wr-49c">
-                                        <rect key="frame" x="259" y="4" width="73" height="32"/>
+                                        <rect key="frame" x="259" y="7" width="73" height="32"/>
                                         <state key="normal" title="Say it">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -379,7 +463,7 @@
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Zqk-Fz-Muh" customClass="UIBubbleTableView">
-                                <rect key="frame" x="3" y="0.0" width="309" height="320"/>
+                                <rect key="frame" x="0.0" y="-8" width="320" height="375"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                         </subviews>
@@ -396,7 +480,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y7J-hh-dNg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="89" y="626"/>
+            <point key="canvasLocation" x="-914" y="722"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5nx-9f-uQh">
@@ -420,6 +504,61 @@
             </objects>
             <point key="canvasLocation" x="-3511.875" y="682.3943661971831"/>
         </scene>
+        <!--First Launch Screen View Controller-->
+        <scene sceneID="h91-1K-Qlz">
+            <objects>
+                <viewController id="i4I-Px-B9J" customClass="FirstLaunchScreenViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JSk-WO-onl"/>
+                        <viewControllerLayoutGuide type="bottom" id="23v-GG-wVE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oGr-3e-Q5j">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mOD-Rw-36o">
+                                <rect key="frame" x="41" y="93" width="216" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="bottom" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="VZL-j7-3Jk">
+                                <rect key="frame" x="194" y="187" width="61" height="30"/>
+                                <color key="backgroundColor" red="0.249615856" green="0.74281455590000001" blue="0.14698809660000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="handleSaveClick:" destination="9h3-HV-wz1" eventType="touchUpInside" id="1YO-iH-jhx"/>
+                                    <action selector="handleSaveClick:" destination="i4I-Px-B9J" eventType="touchUpInside" id="JYk-zy-zes"/>
+                                    <action selector="handleSaveClick:" destination="o0S-cl-mpB" eventType="touchUpInside" id="qAS-jE-ENc"/>
+                                    <segue destination="OFt-Os-g9z" kind="show" identifier="launchscreenToApp" id="1P5-JO-qa7"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My serval ID: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OfB-Tc-uLl">
+                                <rect key="frame" x="41" y="131" width="211" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="nameTextField" destination="mOD-Rw-36o" id="sgF-wP-szx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4np-p6-ano" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5052" y="723"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="i1N-xy-5We">
             <objects>
@@ -439,13 +578,13 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p1f-ru-xQK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5113.125" y="701.40845070422529"/>
+            <point key="canvasLocation" x="-4333.125" y="687.67605633802816"/>
         </scene>
-        <!--Near By-->
+        <!--nearby-->
         <scene sceneID="1RP-ms-pFd">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ecQ-nl-8le" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Near By" id="oS6-9X-113"/>
+                    <tabBarItem key="tabBarItem" title="nearby" image="nearby_icon.png" id="oS6-9X-113"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="UNE-KC-aup">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -458,15 +597,15 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VTI-zd-6SQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3511.875" y="1465.1408450704225"/>
+            <point key="canvasLocation" x="-3523.125" y="1401.7605633802816"/>
         </scene>
         <!--Set Request View Controller-->
         <scene sceneID="KdU-HU-01E">
             <objects>
-                <viewController id="tc8-Vw-4QF" customClass="SetRequestViewController" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="tc8-Vw-4QF" customClass="SetRequestViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="1l2-4A-kdC"/>
-                        <viewControllerLayoutGuide type="bottom" id="5vP-fa-cSW"/>
+                        <viewControllerLayoutGuide type="top" id="VU8-fN-meX"/>
+                        <viewControllerLayoutGuide type="bottom" id="raq-6B-ZD3"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="13j-9z-YyK">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
@@ -483,63 +622,76 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1rl-lz-WxR">
-                                <rect key="frame" x="184" y="223" width="34" height="30"/>
-                                <state key="normal" title="Save">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="handleSaveClick:" destination="tc8-Vw-4QF" eventType="touchUpInside" id="y8p-ag-Bmv"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hGJ-Tn-W8F">
-                                <rect key="frame" x="24" y="261" width="39" height="30"/>
-                                <state key="normal" title="Block">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="handleBlockClick:" destination="tc8-Vw-4QF" eventType="touchUpInside" id="A72-sD-Dsr"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qpb-NT-V8S">
-                                <rect key="frame" x="184" y="223" width="34" height="30"/>
-                                <state key="normal" title="Save">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="handleSaveClick:" destination="tc8-Vw-4QF" eventType="touchUpInside" id="vwA-TM-uDX"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dlv-Gy-AWc">
                                 <rect key="frame" x="164" y="98" width="147" height="25"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="bottom" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="Myr-3f-Zf7">
+                                <rect key="frame" x="177" y="225" width="61" height="30"/>
+                                <color key="backgroundColor" red="0.249615856" green="0.74281455590000001" blue="0.14698809660000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="handleSaveClick:" destination="tc8-Vw-4QF" eventType="touchUpInside" id="oa2-sK-uTc"/>
+                                    <action selector="handleSaveClick:" destination="o0S-cl-mpB" eventType="touchUpInside" id="uue-hV-JaA"/>
+                                    <action selector="handleSaveClick:" destination="9h3-HV-wz1" eventType="touchUpInside" id="wfk-1D-hTW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="N2H-6V-4BJ">
+                                <rect key="frame" x="24" y="225" width="61" height="30"/>
+                                <color key="backgroundColor" red="0.90588235289999997" green="0.2244312265" blue="0.18620971950000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Block">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="handleBlockClick:" destination="o0S-cl-mpB" eventType="touchUpInside" id="Rnb-s3-Dnh"/>
+                                    <action selector="handleBlockClick:" destination="tc8-Vw-4QF" eventType="touchUpInside" id="Siu-wK-IFv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="g2Q-XY-czV"/>
                     <connections>
-                        <outlet property="blockButton" destination="hGJ-Tn-W8F" id="ZH9-ig-beW"/>
+                        <outlet property="blockButton" destination="N2H-6V-4BJ" id="MqE-Rk-pvs"/>
                         <outlet property="nameLabel" destination="dlv-Gy-AWc" id="xq3-Mf-kAt"/>
                         <outlet property="nameTextField" destination="gPw-Ld-3E0" id="Wqb-To-cqR"/>
-                        <outlet property="saveButton" destination="Qpb-NT-V8S" id="GQK-ek-GSK"/>
+                        <outlet property="saveButton" destination="Myr-3f-Zf7" id="qgC-wr-tVh"/>
                         <segue destination="Ny0-XO-sI3" kind="show" identifier="requestToConversation" id="FkY-1o-iuH"/>
                         <segue destination="iaX-Zx-5XS" kind="show" identifier="requestToBlocked" id="6Pf-hT-BRS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Z9-So-xPY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-746.25" y="2233.0985915492956"/>
+            <point key="canvasLocation" x="-1751.25" y="2233.0985915492956"/>
         </scene>
         <!--Set Blocked View Controller-->
         <scene sceneID="m5V-Kn-1Yg">
             <objects>
-                <viewController storyboardIdentifier="SetBlockedViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="iaX-Zx-5XS" customClass="SetBlockedViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SetBlockedViewController" hidesBottomBarWhenPushed="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="iaX-Zx-5XS" customClass="SetBlockedViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ZKR-Fq-kWl"/>
-                        <viewControllerLayoutGuide type="bottom" id="U4Q-mf-6pt"/>
+                        <viewControllerLayoutGuide type="top" id="yAB-j0-UTa"/>
+                        <viewControllerLayoutGuide type="bottom" id="cT1-Bd-Bkb"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Zpp-qf-pye">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
@@ -551,58 +703,80 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qyR-Gi-HyY">
-                                <rect key="frame" x="194" y="244" width="57" height="30"/>
-                                <state key="normal" title="Unblock">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="handleUnblockClick:" destination="iaX-Zx-5XS" eventType="touchUpInside" id="WKk-8a-D7g"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name Editing Field" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LxD-Qi-JWc">
                                 <rect key="frame" x="44" y="137" width="216" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yyz-gC-sPs">
-                                <rect key="frame" x="44" y="202" width="56" height="30"/>
-                                <state key="normal" title="Forget">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="handleForgetClick:" destination="iaX-Zx-5XS" eventType="touchUpInside" id="qzi-Go-RI3"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L8N-oZ-ck3">
                                 <rect key="frame" x="179" y="64" width="105" height="54"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="bottom" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="TsL-i9-IfD">
+                                <rect key="frame" x="199" y="190" width="61" height="30"/>
+                                <color key="backgroundColor" red="0.249615856" green="0.74281455590000001" blue="0.14698809660000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Unblock">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="handleSaveClick:" destination="9h3-HV-wz1" eventType="touchUpInside" id="9Vz-Sk-wIX"/>
+                                    <action selector="handleSaveClick:" destination="o0S-cl-mpB" eventType="touchUpInside" id="QMK-1N-fPk"/>
+                                    <action selector="handleUnblockClick:" destination="iaX-Zx-5XS" eventType="touchUpInside" id="dvh-Ow-YEP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Nl-nd-pfh">
+                                <rect key="frame" x="48" y="190" width="61" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.78464062800000001" blue="0.13856251180000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Forget">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="handleForgetClick:" destination="iaX-Zx-5XS" eventType="touchUpInside" id="Szb-b1-zmU"/>
+                                    <action selector="handleForgetClick:" destination="o0S-cl-mpB" eventType="touchUpInside" id="vwh-YI-Max"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="JJe-nn-a5R"/>
                     <connections>
-                        <outlet property="forgetButton" destination="yyz-gC-sPs" id="cKt-SB-Ykl"/>
+                        <outlet property="forgetButton" destination="4Nl-nd-pfh" id="h4S-5p-Ib0"/>
                         <outlet property="nameLabel" destination="L8N-oZ-ck3" id="nLK-nX-YMJ"/>
                         <outlet property="nameTextField" destination="LxD-Qi-JWc" id="hYZ-9E-bcS"/>
-                        <outlet property="unblockButton" destination="qyR-Gi-HyY" id="QwK-WQ-oMt"/>
+                        <outlet property="unblockButton" destination="TsL-i9-IfD" id="K3a-e1-yxG"/>
                         <segue destination="0m1-NL-MxM" kind="show" identifier="blockedToUnknown" id="R0X-Vy-xXJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X6T-Tn-Whf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-735" y="3000"/>
+            <point key="canvasLocation" x="-1740" y="3008.4507042253513"/>
         </scene>
         <!--Set Unknown View Controller-->
         <scene sceneID="lfE-B4-rl2">
             <objects>
-                <viewController id="0m1-NL-MxM" customClass="SetUnknownViewController" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="0m1-NL-MxM" customClass="SetUnknownViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ukp-x2-rsO"/>
-                        <viewControllerLayoutGuide type="bottom" id="XjG-t4-gJA"/>
+                        <viewControllerLayoutGuide type="top" id="xjJ-Sq-wDa"/>
+                        <viewControllerLayoutGuide type="bottom" id="qHZ-Rj-aMj"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="V8W-bI-RAX">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
@@ -619,53 +793,74 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ysw-UZ-mbE">
-                                <rect key="frame" x="58" y="275" width="39" height="30"/>
-                                <state key="normal" title="Block">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="handleBlockClick:" destination="0m1-NL-MxM" eventType="touchUpInside" id="H0X-Sx-8rV"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XyM-nz-qJZ">
-                                <rect key="frame" x="206" y="237" width="46" height="30"/>
-                                <state key="normal" title="Save">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="handleSaveClick:" destination="tgF-RG-Bis" eventType="touchUpInside" id="dUm-hW-zSQ"/>
-                                    <action selector="handleSaveClick:" destination="0m1-NL-MxM" eventType="touchUpInside" id="sC0-nQ-Ck2"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RlJ-7o-9ee">
                                 <rect key="frame" x="206" y="114" width="147" height="25"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="bottom" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="zQ5-D8-KK8">
+                                <rect key="frame" x="213" y="243" width="61" height="30"/>
+                                <color key="backgroundColor" red="0.249615856" green="0.74281455590000001" blue="0.14698809660000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="handleSaveClick:" destination="0m1-NL-MxM" eventType="touchUpInside" id="2Q6-YJ-iAq"/>
+                                    <action selector="handleSaveClick:" destination="9h3-HV-wz1" eventType="touchUpInside" id="OLc-cI-vLK"/>
+                                    <action selector="handleSaveClick:" destination="o0S-cl-mpB" eventType="touchUpInside" id="oJj-1x-GKf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="5jJ-PW-ERI">
+                                <rect key="frame" x="60" y="243" width="61" height="30"/>
+                                <color key="backgroundColor" red="0.90588235289999997" green="0.2244312265" blue="0.18620971950000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Block">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="handleBlockClick:" destination="o0S-cl-mpB" eventType="touchUpInside" id="4jE-W8-9d4"/>
+                                    <action selector="handleBlockClick:" destination="0m1-NL-MxM" eventType="touchUpInside" id="nLk-CC-jIx"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="P60-V3-Mfn"/>
                     <connections>
-                        <outlet property="blockButton" destination="ysw-UZ-mbE" id="bqC-KC-Gm8"/>
+                        <outlet property="blockButton" destination="5jJ-PW-ERI" id="2w3-AH-alR"/>
                         <outlet property="nameLabel" destination="RlJ-7o-9ee" id="jcI-EL-grq"/>
                         <outlet property="nameTextField" destination="bHR-Og-0vn" id="DEz-G0-yKu"/>
-                        <outlet property="saveButton" destination="XyM-nz-qJZ" id="hFY-We-Gzd"/>
+                        <outlet property="saveButton" destination="zQ5-D8-KK8" id="OEE-j5-vhi"/>
                         <segue destination="iaX-Zx-5XS" kind="show" identifier="unknownToBlocked" id="6my-iI-3bI"/>
                         <segue destination="Ny0-XO-sI3" kind="show" identifier="unknownToConversation" id="qfw-K9-pFG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bKY-Ku-k18" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1180" y="3997"/>
+            <point key="canvasLocation" x="-1715.625" y="3748.9436619718308"/>
         </scene>
         <!--Requests-->
         <scene sceneID="zlE-sA-Fl2">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="prN-1I-ngU" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Requests" id="9gq-SM-Alk"/>
+                    <tabBarItem key="tabBarItem" title="Requests" image="request_icon.png" id="9gq-SM-Alk"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="SsV-ip-Nh6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -684,7 +879,7 @@
         <scene sceneID="rRW-L9-fRO">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5nX-US-UD5" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Blocked" id="IPY-Yf-Qwi"/>
+                    <tabBarItem key="tabBarItem" title="Blocked" image="bloqued_icon.png" id="IPY-Yf-Qwi"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="RdS-aB-hFH">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -699,68 +894,15 @@
             </objects>
             <point key="canvasLocation" x="-3500.625" y="3000"/>
         </scene>
-        <!--Set Request View Controller-->
-        <scene sceneID="k35-qm-GC3">
-            <objects>
-                <viewController id="tgF-RG-Bis" customClass="SetRequestViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="tlU-CX-QGy"/>
-                        <viewControllerLayoutGuide type="bottom" id="jcd-qq-VFj"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="DTc-qQ-deh">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name Editing Field" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ypx-A0-xc1">
-                                <rect key="frame" x="24" y="161" width="216" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Request contact:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="420-eG-d9w">
-                                <rect key="frame" x="24" y="102" width="132" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J0Z-f0-WKh">
-                                <rect key="frame" x="164" y="100" width="147" height="25"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iJg-YG-ovl">
-                                <rect key="frame" x="184" y="223" width="34" height="30"/>
-                                <state key="normal" title="Save">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="handleSaveClick:" destination="tgF-RG-Bis" eventType="touchUpInside" id="p8x-1Y-rO8"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fjx-zw-ZLJ">
-                                <rect key="frame" x="24" y="261" width="39" height="30"/>
-                                <state key="normal" title="Block">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <connections>
-                        <outlet property="blockButton" destination="Fjx-zw-ZLJ" id="qww-Og-nmU"/>
-                        <outlet property="nameLabel" destination="J0Z-f0-WKh" id="8Dv-jg-EgD"/>
-                        <outlet property="nameTextField" destination="Ypx-A0-xc1" id="HhS-jQ-Tfn"/>
-                        <outlet property="saveButton" destination="iJg-YG-ovl" id="VZa-ua-gPI"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ehu-GE-asR" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-746.25" y="2233.0985915492956"/>
-        </scene>
     </scenes>
+    <resources>
+        <image name="bloqued_icon.png" width="25" height="25"/>
+        <image name="nearby_icon.png" width="32" height="32"/>
+        <image name="request_icon.png" width="25" height="25"/>
+    </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="ktN-ik-knB"/>
+        <segue reference="R0X-Vy-xXJ"/>
         <segue reference="msi-L7-5mG"/>
-        <segue reference="TNJ-6O-tqr"/>
-        <segue reference="ZMu-pM-hc1"/>
     </inferredMetricsTieBreakers>
 </document>

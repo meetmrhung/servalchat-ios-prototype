@@ -47,8 +47,13 @@
     
     NSBubbleData *replyBubble = [NSBubbleData dataWithText:@"Wow.. Really cool!" date:[NSDate dateWithTimeIntervalSinceNow:-5] type:BubbleTypeMine];
     replyBubble.avatar = nil;
+    NSBubbleData *replyBubble2 = [NSBubbleData dataWithText:@"Do you think our conversation screen will look good in the project report? ;-)" date:[NSDate dateWithTimeIntervalSinceNow:-5] type:BubbleTypeMine];
+    replyBubble.avatar = nil;
     
-    bubbleData = [[NSMutableArray alloc] initWithObjects:heyBubble, replyBubble, nil];
+    NSBubbleData *heyBubble2 = [NSBubbleData dataWithText:@"Yeah! great idea =D" date:[NSDate dateWithTimeIntervalSinceNow:-3] type:BubbleTypeSomeoneElse];
+    heyBubble.avatar = [UIImage imageNamed:@"avatar1.png"];
+    
+    bubbleData = [[NSMutableArray alloc] initWithObjects:heyBubble, replyBubble,replyBubble2, heyBubble2, nil];
     bubbleTable.bubbleDataSource = self;
     
     // The line below sets the snap interval in seconds. This defines how the bubbles will be grouped in time.

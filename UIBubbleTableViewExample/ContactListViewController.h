@@ -17,5 +17,8 @@
 
 
 
+@property (strong, nonatomic) IBOutlet UINavigationItem *contactUINavigationItem;
+
+
 
 @end

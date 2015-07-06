@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D028DF11B46367300BE193B /* bloqued_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D028DF01B46367300BE193B /* bloqued_icon.png */; };
+		2D028DF51B46379000BE193B /* request_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D028DF41B46379000BE193B /* request_icon.png */; };
+		2D028DFF1B463AF600BE193B /* nearby_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D028DFE1B463AF600BE193B /* nearby_icon.png */; };
+		2D028E011B46410C00BE193B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D028E001B46410C00BE193B /* Images.xcassets */; };
+		2D028E031B46489D00BE193B /* app_icon_58.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D028E021B46489D00BE193B /* app_icon_58.png */; };
+		2D028E051B4648A700BE193B /* app_icon_87.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D028E041B4648A700BE193B /* app_icon_87.png */; };
+		2D028E071B464A7600BE193B /* app_icon_60.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D028E061B464A7600BE193B /* app_icon_60.png */; };
+		2D028E091B464A8000BE193B /* app_icon_72.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D028E081B464A8000BE193B /* app_icon_72.png */; };
+		2D028E0B1B464A8700BE193B /* app_icon_76.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D028E0A1B464A8700BE193B /* app_icon_76.png */; };
+		2D028E0E1B464E9900BE193B /* FirstLaunchScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D028E0D1B464E9900BE193B /* FirstLaunchScreenViewController.m */; };
+		2D5EBA991B23FBCD00D6BDF8 /* icon_25.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D5EBA981B23FBCD00D6BDF8 /* icon_25.png */; };
+		2D5EBA9B1B23FD2F00D6BDF8 /* icon_30.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D5EBA9A1B23FD2F00D6BDF8 /* icon_30.png */; };
+		2D5EBA9F1B240EA300D6BDF8 /* setting.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D5EBA9E1B240EA300D6BDF8 /* setting.png */; };
+		2D5EBAA11B240FF800D6BDF8 /* settings-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D5EBAA01B240FF800D6BDF8 /* settings-logo.png */; };
+		2D5EBAA41B24125C00D6BDF8 /* SetProfilViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5EBAA31B24125C00D6BDF8 /* SetProfilViewController.m */; };
 		2DCF003B1B1D895A003654CA /* Blocked.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCF00201B1D895A003654CA /* Blocked.m */; };
 		2DCF003C1B1D895A003654CA /* BlockedListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCF00221B1D895A003654CA /* BlockedListViewController.m */; };
 		2DCF003D1B1D895A003654CA /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCF00241B1D895A003654CA /* Contact.m */; };
@@ -21,10 +36,7 @@
 		2DCF00471B1D895A003654CA /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCF00381B1D895A003654CA /* SettingViewController.m */; };
 		2DCF00481B1D895A003654CA /* SetUnknownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCF003A1B1D895A003654CA /* SetUnknownViewController.m */; };
 		2DCF00491B1DCD01003654CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DCF004B1B1DCD01003654CA /* Main.storyboard */; };
-		2DE283AB1B1F0DEB00F55472 /* icon_57.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DE283AA1B1F0DEB00F55472 /* icon_57.png */; };
-		2DE283AD1B1F0DF200F55472 /* icon_114.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DE283AC1B1F0DF200F55472 /* icon_114.png */; };
 		76687AFD1622039C00707588 /* UIBubbleTypingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 76687AFC1622039C00707588 /* UIBubbleTypingTableViewCell.m */; };
-		76687AFF162203AF00707588 /* halloween.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 76687AFE162203AF00707588 /* halloween.jpg */; };
 		76D097CC1621F0E000C17816 /* UIBubbleHeaderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D097CB1621F0E000C17816 /* UIBubbleHeaderTableViewCell.m */; };
 		76ED206315BF096C00E186D3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76ED206215BF096C00E186D3 /* UIKit.framework */; };
 		76ED206515BF096C00E186D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76ED206415BF096C00E186D3 /* Foundation.framework */; };
@@ -38,7 +50,6 @@
 		76ED209415BF29EE00E186D3 /* UIBubbleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 76ED209315BF29EE00E186D3 /* UIBubbleTableViewCell.m */; };
 		C836D5CA1625CBA5004CB4A9 /* missingAvatar.png in Resources */ = {isa = PBXBuildFile; fileRef = C836D5C81625CBA5004CB4A9 /* missingAvatar.png */; };
 		C836D5CB1625CBA5004CB4A9 /* missingAvatar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C836D5C91625CBA5004CB4A9 /* missingAvatar@2x.png */; };
-		C836D5CE1625D718004CB4A9 /* avatar1.png in Resources */ = {isa = PBXBuildFile; fileRef = C836D5CD1625D718004CB4A9 /* avatar1.png */; };
 		C83B107915DE43180067DADE /* bubbleMine.png in Resources */ = {isa = PBXBuildFile; fileRef = C83B107115DE43180067DADE /* bubbleMine.png */; };
 		C83B107A15DE43180067DADE /* bubbleMine@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C83B107215DE43180067DADE /* bubbleMine@2x.png */; };
 		C83B107B15DE43180067DADE /* bubbleSomeone.png in Resources */ = {isa = PBXBuildFile; fileRef = C83B107315DE43180067DADE /* bubbleSomeone.png */; };
@@ -50,6 +61,23 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D028DF01B46367300BE193B /* bloqued_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bloqued_icon.png; sourceTree = "<group>"; };
+		2D028DF41B46379000BE193B /* request_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = request_icon.png; sourceTree = "<group>"; };
+		2D028DFE1B463AF600BE193B /* nearby_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nearby_icon.png; sourceTree = "<group>"; };
+		2D028E001B46410C00BE193B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2D028E021B46489D00BE193B /* app_icon_58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app_icon_58.png; sourceTree = "<group>"; };
+		2D028E041B4648A700BE193B /* app_icon_87.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app_icon_87.png; sourceTree = "<group>"; };
+		2D028E061B464A7600BE193B /* app_icon_60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app_icon_60.png; sourceTree = "<group>"; };
+		2D028E081B464A8000BE193B /* app_icon_72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app_icon_72.png; sourceTree = "<group>"; };
+		2D028E0A1B464A8700BE193B /* app_icon_76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app_icon_76.png; sourceTree = "<group>"; };
+		2D028E0C1B464E9900BE193B /* FirstLaunchScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstLaunchScreenViewController.h; sourceTree = "<group>"; };
+		2D028E0D1B464E9900BE193B /* FirstLaunchScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstLaunchScreenViewController.m; sourceTree = "<group>"; };
+		2D5EBA981B23FBCD00D6BDF8 /* icon_25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_25.png; sourceTree = "<group>"; };
+		2D5EBA9A1B23FD2F00D6BDF8 /* icon_30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_30.png; sourceTree = "<group>"; };
+		2D5EBA9E1B240EA300D6BDF8 /* setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = setting.png; sourceTree = "<group>"; };
+		2D5EBAA01B240FF800D6BDF8 /* settings-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings-logo.png"; sourceTree = "<group>"; };
+		2D5EBAA21B24125C00D6BDF8 /* SetProfilViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetProfilViewController.h; sourceTree = "<group>"; };
+		2D5EBAA31B24125C00D6BDF8 /* SetProfilViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetProfilViewController.m; sourceTree = "<group>"; };
 		2DCF001F1B1D895A003654CA /* Blocked.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Blocked.h; sourceTree = "<group>"; };
 		2DCF00201B1D895A003654CA /* Blocked.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Blocked.m; sourceTree = "<group>"; };
 		2DCF00211B1D895A003654CA /* BlockedListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockedListViewController.h; sourceTree = "<group>"; };
@@ -77,11 +105,8 @@
 		2DCF00391B1D895A003654CA /* SetUnknownViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetUnknownViewController.h; sourceTree = "<group>"; };
 		2DCF003A1B1D895A003654CA /* SetUnknownViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetUnknownViewController.m; sourceTree = "<group>"; };
 		2DCF004A1B1DCD01003654CA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2DE283AA1B1F0DEB00F55472 /* icon_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_57.png; sourceTree = "<group>"; };
-		2DE283AC1B1F0DF200F55472 /* icon_114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_114.png; sourceTree = "<group>"; };
 		76687AFB1622039C00707588 /* UIBubbleTypingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIBubbleTypingTableViewCell.h; path = ../../src/UIBubbleTypingTableViewCell.h; sourceTree = "<group>"; };
 		76687AFC1622039C00707588 /* UIBubbleTypingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIBubbleTypingTableViewCell.m; path = ../../src/UIBubbleTypingTableViewCell.m; sourceTree = "<group>"; };
-		76687AFE162203AF00707588 /* halloween.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = halloween.jpg; sourceTree = SOURCE_ROOT; };
 		76D097CA1621F0E000C17816 /* UIBubbleHeaderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIBubbleHeaderTableViewCell.h; path = ../../src/UIBubbleHeaderTableViewCell.h; sourceTree = "<group>"; };
 		76D097CB1621F0E000C17816 /* UIBubbleHeaderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIBubbleHeaderTableViewCell.m; path = ../../src/UIBubbleHeaderTableViewCell.m; sourceTree = "<group>"; };
 		76ED205E15BF096C00E186D3 /* ServalExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ServalExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,7 +130,6 @@
 		76ED209315BF29EE00E186D3 /* UIBubbleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIBubbleTableViewCell.m; path = ../../src/UIBubbleTableViewCell.m; sourceTree = "<group>"; };
 		C836D5C81625CBA5004CB4A9 /* missingAvatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = missingAvatar.png; sourceTree = "<group>"; };
 		C836D5C91625CBA5004CB4A9 /* missingAvatar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "missingAvatar@2x.png"; sourceTree = "<group>"; };
-		C836D5CD1625D718004CB4A9 /* avatar1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar1.png; sourceTree = SOURCE_ROOT; };
 		C83B107115DE43180067DADE /* bubbleMine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bubbleMine.png; sourceTree = "<group>"; };
 		C83B107215DE43180067DADE /* bubbleMine@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bubbleMine@2x.png"; sourceTree = "<group>"; };
 		C83B107315DE43180067DADE /* bubbleSomeone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bubbleSomeone.png; sourceTree = "<group>"; };
@@ -162,6 +186,8 @@
 			children = (
 				2DCF001F1B1D895A003654CA /* Blocked.h */,
 				2DCF00201B1D895A003654CA /* Blocked.m */,
+				2D5EBAA21B24125C00D6BDF8 /* SetProfilViewController.h */,
+				2D5EBAA31B24125C00D6BDF8 /* SetProfilViewController.m */,
 				2DCF00211B1D895A003654CA /* BlockedListViewController.h */,
 				2DCF00221B1D895A003654CA /* BlockedListViewController.m */,
 				2DCF00231B1D895A003654CA /* Contact.h */,
@@ -177,6 +203,7 @@
 				2DCF002D1B1D895A003654CA /* RequestListViewController.h */,
 				2DCF002E1B1D895A003654CA /* RequestListViewController.m */,
 				2DCF002F1B1D895A003654CA /* SetBlockedViewController.h */,
+				2D028E001B46410C00BE193B /* Images.xcassets */,
 				2DCF00301B1D895A003654CA /* SetBlockedViewController.m */,
 				2DCF00311B1D895A003654CA /* SetContactViewController.h */,
 				2DCF00321B1D895A003654CA /* SetContactViewController.m */,
@@ -193,6 +220,8 @@
 				76ED207415BF096C00E186D3 /* ConversationViewController.h */,
 				76ED207515BF096C00E186D3 /* ConversationViewController.m */,
 				2DCF004B1B1DCD01003654CA /* Main.storyboard */,
+				2D028E0C1B464E9900BE193B /* FirstLaunchScreenViewController.h */,
+				2D028E0D1B464E9900BE193B /* FirstLaunchScreenViewController.m */,
 				76ED206915BF096C00E186D3 /* Supporting Files */,
 			);
 			path = UIBubbleTableViewExample;
@@ -201,10 +230,18 @@
 		76ED206915BF096C00E186D3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				C836D5CD1625D718004CB4A9 /* avatar1.png */,
-				76687AFE162203AF00707588 /* halloween.jpg */,
-				2DE283AC1B1F0DF200F55472 /* icon_114.png */,
-				2DE283AA1B1F0DEB00F55472 /* icon_57.png */,
+				2D028DF01B46367300BE193B /* bloqued_icon.png */,
+				2D028DFE1B463AF600BE193B /* nearby_icon.png */,
+				2D028E021B46489D00BE193B /* app_icon_58.png */,
+				2D028E081B464A8000BE193B /* app_icon_72.png */,
+				2D028E0A1B464A8700BE193B /* app_icon_76.png */,
+				2D028E061B464A7600BE193B /* app_icon_60.png */,
+				2D028E041B4648A700BE193B /* app_icon_87.png */,
+				2D028DF41B46379000BE193B /* request_icon.png */,
+				2D5EBA9A1B23FD2F00D6BDF8 /* icon_30.png */,
+				2D5EBAA01B240FF800D6BDF8 /* settings-logo.png */,
+				2D5EBA9E1B240EA300D6BDF8 /* setting.png */,
+				2D5EBA981B23FBCD00D6BDF8 /* icon_25.png */,
 				76ED206A15BF096C00E186D3 /* ServalExample-Info.plist */,
 				76ED206B15BF096C00E186D3 /* InfoPlist.strings */,
 				76ED206E15BF096C00E186D3 /* main.m */,
@@ -300,21 +337,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				76ED206D15BF096C00E186D3 /* InfoPlist.strings in Resources */,
+				2D5EBA9B1B23FD2F00D6BDF8 /* icon_30.png in Resources */,
 				C83B107915DE43180067DADE /* bubbleMine.png in Resources */,
+				2D028E0B1B464A8700BE193B /* app_icon_76.png in Resources */,
+				2D028E051B4648A700BE193B /* app_icon_87.png in Resources */,
+				2D028DF51B46379000BE193B /* request_icon.png in Resources */,
 				C83B107A15DE43180067DADE /* bubbleMine@2x.png in Resources */,
 				2DCF00491B1DCD01003654CA /* Main.storyboard in Resources */,
 				C83B107B15DE43180067DADE /* bubbleSomeone.png in Resources */,
 				C83B107C15DE43180067DADE /* bubbleSomeone@2x.png in Resources */,
 				C83B107D15DE43180067DADE /* typingMine.png in Resources */,
+				2D028E031B46489D00BE193B /* app_icon_58.png in Resources */,
+				2D028E011B46410C00BE193B /* Images.xcassets in Resources */,
 				C83B107E15DE43180067DADE /* typingMine@2x.png in Resources */,
 				C83B107F15DE43180067DADE /* typingSomeone.png in Resources */,
 				C83B108015DE43180067DADE /* typingSomeone@2x.png in Resources */,
-				76687AFF162203AF00707588 /* halloween.jpg in Resources */,
+				2D028E091B464A8000BE193B /* app_icon_72.png in Resources */,
+				2D028DFF1B463AF600BE193B /* nearby_icon.png in Resources */,
+				2D5EBAA11B240FF800D6BDF8 /* settings-logo.png in Resources */,
 				C836D5CA1625CBA5004CB4A9 /* missingAvatar.png in Resources */,
 				C836D5CB1625CBA5004CB4A9 /* missingAvatar@2x.png in Resources */,
-				2DE283AD1B1F0DF200F55472 /* icon_114.png in Resources */,
-				2DE283AB1B1F0DEB00F55472 /* icon_57.png in Resources */,
-				C836D5CE1625D718004CB4A9 /* avatar1.png in Resources */,
+				2D5EBA9F1B240EA300D6BDF8 /* setting.png in Resources */,
+				2D028DF11B46367300BE193B /* bloqued_icon.png in Resources */,
+				2D028E071B464A7600BE193B /* app_icon_60.png in Resources */,
+				2D5EBA991B23FBCD00D6BDF8 /* icon_25.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +382,7 @@
 				76ED208B15BF0BB100E186D3 /* NSBubbleData.m in Sources */,
 				76ED209415BF29EE00E186D3 /* UIBubbleTableViewCell.m in Sources */,
 				2DCF003D1B1D895A003654CA /* Contact.m in Sources */,
+				2D5EBAA41B24125C00D6BDF8 /* SetProfilViewController.m in Sources */,
 				2DCF00421B1D895A003654CA /* RequestListViewController.m in Sources */,
 				76D097CC1621F0E000C17816 /* UIBubbleHeaderTableViewCell.m in Sources */,
 				2DCF00431B1D895A003654CA /* SetBlockedViewController.m in Sources */,
@@ -346,6 +393,7 @@
 				2DCF00471B1D895A003654CA /* SettingViewController.m in Sources */,
 				2DCF00441B1D895A003654CA /* SetContactViewController.m in Sources */,
 				2DCF00401B1D895A003654CA /* NearByListViewController.m in Sources */,
+				2D028E0E1B464E9900BE193B /* FirstLaunchScreenViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +486,7 @@
 		76ED207D15BF096C00E186D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UIBubbleTableViewExample/ServalExample-Prefix.pch";
 				INFOPLIST_FILE = "UIBubbleTableViewExample/ServalExample-Info.plist";
@@ -451,6 +500,7 @@
 		76ED207E15BF096C00E186D3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UIBubbleTableViewExample/ServalExample-Prefix.pch";
 				INFOPLIST_FILE = "UIBubbleTableViewExample/ServalExample-Info.plist";

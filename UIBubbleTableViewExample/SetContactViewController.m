@@ -20,6 +20,7 @@
 
 @synthesize nameLabel;
 @synthesize name;
+@synthesize setNavigationItem;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -33,7 +34,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Set the Label text with the selected recipe
+   /* NSString *varyingString1 = @"Near by -";
+    NSString *str = [NSString stringWithFormat: @"%@ %@", varyingString1,name];
+    setNavigationItem.title=str;
+    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"no" style:UIBarButtonItemStyleBordered target:nil action:nil];
+    setNavigationItem.backBarButtonItem=backButton;*/ 
     nameLabel.text = name;
 }
 
@@ -58,10 +63,10 @@
 }
 
 
-- (IBAction)handleBlockClick:(id)sender {
-    [self performSegueWithIdentifier:@"nearbyToBlocked" sender:self];
-}
 
+- (IBAction)handleBlockClick:(id)sender {
+     [self performSegueWithIdentifier:@"nearbyToBlocked" sender:self];
+}
 
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
@@ -99,8 +104,6 @@
 
 
 }*/
-
-
 
 
 @end

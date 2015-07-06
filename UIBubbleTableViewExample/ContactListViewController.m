@@ -23,12 +23,25 @@
 @implementation ContactListViewController
 
 @synthesize tableView;
+@synthesize contactUINavigationItem;
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-  
     [self loadInitialData];
+    UIBarButtonItem * item = [[UIBarButtonItem alloc] initWithCustomView:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"icon_25.png"]]];
+    contactUINavigationItem.leftBarButtonItem = item;
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [btn setFrame:CGRectMake(0.0f, 0.0f, 25.0f, 40.0f)];
+    [btn addTarget:self action:@selector(handleSaveClick:) forControlEvents:UIControlEventTouchUpInside];
+    [btn setImage:[UIImage imageNamed:@"settings-logo.png"] forState:UIControlStateNormal];
+    UIBarButtonItem *eng_btn = [[UIBarButtonItem alloc] initWithCustomView:btn];
+   contactUINavigationItem.rightBarButtonItem= eng_btn;
+    /*UIBarButtonItem * item2 = [[UIBarButtonItem alloc] initWithCustomView:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"settings-logo.png"]]];
+    contactUINavigationItem.rightBarButtonItem = item2;*/
     
+    /*contactUINavifationItem.titleView=[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"icon_57.png"]];*/
+  
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -142,6 +155,10 @@ self.contacts = [NSMutableArray arrayWithObjects:contact1, contact2, contact3, c
     }
     
 
+}
+
+- (void)handleSaveClick:(id)sender {
+    [self performSegueWithIdentifier:@"contactsToSetProfil" sender:self];
 }
 
 
@@ -261,6 +278,9 @@ self.contacts = [NSMutableArray arrayWithObjects:contact1, contact2, contact3, c
     [tableView release];
     [super dealloc];
 }*/
+
+
+
 @end
 
 /*- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
